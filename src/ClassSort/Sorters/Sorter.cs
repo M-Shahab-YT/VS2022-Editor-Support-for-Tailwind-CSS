@@ -19,14 +19,15 @@ internal abstract class Sorter
 
     public string Sort(string input, TailwindConfiguration config)
     {
-        var output = new StringBuilder();
+        return input.ToString();
+        // var output = new StringBuilder();
 
-        foreach (var segment in GetSegments(input, config))
-        {
-            output.Append(segment);
-        }
+        // foreach (var segment in GetSegments(input, config))
+        // {
+        //     output.Append(segment);
+        // }
 
-        return output.ToString();
+        // return output.ToString();
     }
 
     protected abstract IEnumerable<string> GetSegments(string input, TailwindConfiguration config);
